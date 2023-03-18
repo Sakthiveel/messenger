@@ -2,14 +2,14 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage";
 import { getFirestore } from "firebase/firestore";
-
+alert(process.env.REACT_APP_API_KEY);
 const firebaseConfig = {
-  apiKey: "AIzaSyDSTLF7xN9DmBPl3Md3YcxebXoY23wkwww",
-  authDomain: "messenger-bb43a.firebaseapp.com",
-  projectId: "messenger-bb43a",
-  storageBucket: "messenger-bb43a.appspot.com",
-  messagingSenderId: "931228831813",
-  appId: "1:931228831813:web:b8b5472aacc6697984d32c",
+  apiKey:process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  projectId:process.env.REACT_APP_PROJECTID ,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGINSENDERID,
+  appId: process.env.REACT_APP_APPID,
 };
 
 // Initialize Firebase
